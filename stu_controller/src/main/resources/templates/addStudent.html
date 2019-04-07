@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h1>添加学生</h1>
+    <form action="/student/add" method="post">
+    <table>
+
+        <tr>
+            <td>姓名</td>
+            <td><input type="text" name="sName" ></td>
+        </tr>
+        <tr>
+            <td>生日</td>
+            <td><input type="date" name="sBirth" ></td>
+        </tr><!--sSex-->
+        <tr>
+            <td>性别</td>
+            <td><input type="text" name="sSex" ></td>
+        </tr><!---->
+        <tr>
+            <td>班级</td>
+            <td>
+                <select name="classId">
+                    <option value="1">一年级一班</option>
+                    <option value="2">一年级二班</option>
+                    <option value="3">一年级三班</option>
+                </select>
+            </td>
+        </tr><!---->
+            <tr>
+                <td></td>
+                <td><input type="submit" value="提交" ></td>
+            </tr>
+
+    </table>
+    </form>
+
+</body>
+</html>

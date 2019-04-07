@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql:///prodcut
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+dubbo:
+  application:
+    name: class_service
+  protocol:
+    port: 20881
+  registry:
+    address: zookeeper://192.168.65.129:2181

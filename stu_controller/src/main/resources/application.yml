@@ -1,0 +1,7 @@
+dubbo:
+  application:
+    name: stu
+  registry:
+    address: zookeeper://192.168.65.129:2181
+server:
+  port: 8888
